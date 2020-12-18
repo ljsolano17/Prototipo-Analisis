@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+
+
+<html lang="en"
+      dir="ltr"
+      class="dark-mode">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Practicas Estudiante</title>
+
+        <!-- Prevent the demo from appearing in search engines -->
+        <meta name="robots"
+              content="noindex">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&display=swap"
+              rel="stylesheet">
+
+          <!-- Preloader -->
+          <link type="text/css"
+          href="../../../public/vendor/spinkit.css"
+          rel="stylesheet">
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css"
+          href="../../../public/vendor/perfect-scrollbar.css"
+          rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css"
+          href="../../../public/css/material-icons.css"
+          rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link type="text/css"
+          href="../../../public/css/fontawesome.css"
+          rel="stylesheet">
+
+    <!-- Preloader -->
+    <link type="text/css"
+          href="../../../public/css/preloader.css"
+          rel="stylesheet">
+
+    <!-- App CSS -->
+    <link type="text/css"
+          href="../../../public/css/app.css"
+          rel="stylesheet">
+    
+    <link type="text/css"
+          href="../../../public/css/dark.css"
+          rel="stylesheet">
+
+    <!-- Flatpickr -->
+    <link type="text/css"
+          href="../../../public/css/flatpickr.css"
+          rel="stylesheet">
+    <link type="text/css"
+          href="../../../public/css/flatpickr-airbnb.css"
+          rel="stylesheet">
+
+    </head>
+
+    <body class="layout-app ">
+        <style>
+            img{
+max-width: 100%;
+max-height: 100%;
+display: block; /* remove extra space below image */
+}
+.box{
+width: 250px;        
+border: 5px solid black;
+}    
+.box.large{
+height: 300px;
+}
+.box.small{
+height: 100px;
+}
+       </style>
+        <div class="preloader">
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+            </div>
+
+            <!-- <div class="sk-bounce">
+    <div class="sk-bounce-dot"></div>
+    <div class="sk-bounce-dot"></div>
+  </div> -->
+
+            <!-- More spinner examples at https://github.com/tobiasahlin/SpinKit/blob/master/examples.html -->
+        </div>
+
+        <!-- Drawer Layout -->
+
+        <div class="mdk-drawer-layout js-mdk-drawer-layout"
+             data-push
+             data-responsive-width="992px">
+            <div class="mdk-drawer-layout__content page-content">
+
+                <!-- Header -->
+
+                <!-- Navbar -->
+
+                <div class="navbar navbar-expand pr-0 navbar-dark border-bottom-2"
+                id="default-navbar"
+                data-primary>
+
+               <!-- Navbar Toggler -->
+
+               <button class="navbar-toggler w-auto mr-16pt d-block d-lg-none rounded-0"
+                       type="button"
+                       data-toggle="sidebar">
+                   <span class="material-icons">short_text</span>
+               </button>
+
+               <!-- // END Navbar Toggler -->
+               <!-- Navbar Brand -->
+
+               <a href="dashboard.html"
+                  class="navbar-brand mr-16pt d-lg-none">
+
+                   <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+
+                       <span class="avatar-title rounded bg-primary">
+                           <img src="img/images/illustration/student/128/white.svg"
+                                alt="logo"
+                                class="img-fluid" />
+                       </span>
+
+                   </span>
+
+                   <span class="d-none d-lg-block">Luma</span>
+               </a>
+
+               <!-- // END Navbar Brand -->
+
+
+
+               <div class="flex"></div>
+
+               <!-- Navbar Menu -->
+
+               <div class="nav navbar-nav flex-nowrap d-flex mr-16pt">
+
+                   <!-- Notifications dropdown -->
+                   <div class="nav-item dropdown dropdown-notifications dropdown-xs-down-full"
+                        data-toggle="tooltip"
+                        data-title="Messages"
+                        data-placement="bottom"
+                        data-boundary="window">
+                       <button class="nav-link btn-flush dropdown-toggle"
+                               type="button"
+                               data-toggle="dropdown"
+                               data-caret="false">
+                           <i class="material-icons icon-24pt">mail_outline</i>
+                       </button>
+                       <div class="dropdown-menu dropdown-menu-right">
+                           <div data-perfect-scrollbar
+                                class="position-relative">
+                               <div class="dropdown-header"><strong>Messages</strong></div>
+                               <div class="list-group list-group-flush mb-0">
+
+                                   <a href="javascript:void(0);"
+                                      class="list-group-item list-group-item-action unread">
+                                       <span class="d-flex align-items-center mb-1">
+                                           <small class="text-black-50">5 minutes ago</small>
+
+                                           <span class="ml-auto unread-indicator bg-accent"></span>
+
+                                       </span>
+                                       <span class="d-flex">
+                                           <span class="avatar avatar-xs mr-2">
+                                               <img src="~/Content/images/people/110/woman-5.jpg"
+                                                    alt="people"
+                                                    class="avatar-img rounded-circle">
+                                           </span>
+                                           <span class="flex d-flex flex-column">
+                                               <strong class="text-black-100">Michelle</strong>
+                                               <span class="text-black-70">Clients loved the new design.</span>
+                                           </span>
+                                       </span>
+                                   </a>
+
+                                   <a href="javascript:void(0);"
+                                      class="list-group-item list-group-item-action">
+                                       <span class="d-flex align-items-center mb-1">
+                                           <small class="text-black-50">5 minutes ago</small>
+
+                                       </span>
+                                       <span class="d-flex">
+                                           <span class="avatar avatar-xs mr-2">
+                                               <img src="~/Content/images/people/110/woman-5.jpg"
+                                                    alt="people"
+                                                    class="avatar-img rounded-circle">
+                                           </span>
+                                           <span class="flex d-flex flex-column">
+                                               <strong class="text-black-100">Michelle</strong>
+                                               <span class="text-black-70">🔥 Superb job..</span>
+                                           </span>
+                                       </span>
+                                   </a>
+
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- // END Notifications dropdown -->
+                   <!-- Notifications dropdown -->
+                   <div class="nav-item ml-16pt dropdown dropdown-notifications dropdown-xs-down-full"
+                        data-toggle="tooltip"
+                        data-title="Notifications"
+                        data-placement="bottom"
+                        data-boundary="window">
+                       <button class="nav-link btn-flush dropdown-toggle"
+                               type="button"
+                               data-toggle="dropdown"
+                               data-caret="false">
+                           <i class="material-icons">notifications_none</i>
+                           <span class="badge badge-notifications badge-accent">2</span>
+                       </button>
+                       <div class="dropdown-menu dropdown-menu-right">
+                           <div data-perfect-scrollbar
+                                class="position-relative">
+                               <div class="dropdown-header"><strong>System notifications</strong></div>
+                               <div class="list-group list-group-flush mb-0">
+
+                                   <a href="javascript:void(0);"
+                                      class="list-group-item list-group-item-action unread">
+                                       <span class="d-flex align-items-center mb-1">
+                                           <small class="text-black-50">3 minutes ago</small>
+
+                                           <span class="ml-auto unread-indicator bg-accent"></span>
+
+                                       </span>
+                                       <span class="d-flex">
+                                           <span class="avatar avatar-xs mr-2">
+                                               <span class="avatar-title rounded-circle bg-light">
+                                                   <i class="material-icons font-size-16pt text-accent">account_circle</i>
+                                               </span>
+                                           </span>
+                                           <span class="flex d-flex flex-column">
+
+                                               <span class="text-black-70">Your profile information has not been synced correctly.</span>
+                                           </span>
+                                       </span>
+                                   </a>
+
+                                   <a href="javascript:void(0);"
+                                      class="list-group-item list-group-item-action">
+                                       <span class="d-flex align-items-center mb-1">
+                                           <small class="text-black-50">5 hours ago</small>
+
+                                       </span>
+                                       <span class="d-flex">
+                                           <span class="avatar avatar-xs mr-2">
+                                               <span class="avatar-title rounded-circle bg-light">
+                                                   <i class="material-icons font-size-16pt text-primary">group_add</i>
+                                               </span>
+                                           </span>
+                                           <span class="flex d-flex flex-column">
+                                               <strong class="text-black-100">Adrian. D</strong>
+                                               <span class="text-black-70">Wants to join your private group.</span>
+                                           </span>
+                                       </span>
+                                   </a>
+
+                                   <a href="javascript:void(0);"
+                                      class="list-group-item list-group-item-action">
+                                       <span class="d-flex align-items-center mb-1">
+                                           <small class="text-black-50">1 day ago</small>
+
+                                       </span>
+                                       <span class="d-flex">
+                                           <span class="avatar avatar-xs mr-2">
+                                               <span class="avatar-title rounded-circle bg-light">
+                                                   <i class="material-icons font-size-16pt text-warning">storage</i>
+                                               </span>
+                                           </span>
+                                           <span class="flex d-flex flex-column">
+
+                                               <span class="text-black-70">Your deploy was successful.</span>
+                                           </span>
+                                       </span>
+                                   </a>
+
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- // END Notifications dropdown -->
+
+                   <div class="nav-item dropdown">
+                       <a href="#"
+                          class="nav-link d-flex align-items-center dropdown-toggle"
+                          data-toggle="dropdown"
+                          data-caret="false">
+
+                           <span class="avatar avatar-sm mr-8pt2">
+
+                               <span class="avatar-title rounded-circle bg-primary"><i class="material-icons">account_box</i></span>
+
+                           </span>
+
+                       </a>
+                       <div class="dropdown-menu dropdown-menu-right">
+                           <div class="dropdown-header"><strong>Account</strong></div>
+
+
+                           <a class="dropdown-item active"
+                           href="myprofile.html">Editar Perfil</a>
+                         
+                           <a class="dropdown-item"
+                           href="../login.html">Salir</a>
+                       </div>
+                   </div>
+               </div>
+
+               <!-- // END Navbar Menu -->
+           </div>
+
+                <!-- // END Navbar -->
+
+                <!-- // END Header -->
+
+
+                <!-- BEFORE Page Content -->
+
+                <!-- // END BEFORE Page Content -->
+
+                <!-- Page Content -->
+                <div class="container page__container page-section">
+
+                    <div class="row mb-32pt">
+                        <div class="col-xl-12 d-flex align-items-center">
+                            <div class="flex"
+                                 style="max-width: 100%">
+                                <div class="form-row">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Curso Buceo
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                          <button class="dropdown-item" type="button">Curso 1</button>
+                                          <button class="dropdown-item" type="button">Curso 2</button>
+                                          <button class="dropdown-item" type="button">Curso 3</button><br>
+                                        </div>
+                                        <br>
+                                      </div>
+                                      <br>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary"
+                                        type="submit">
+                                    Consutar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-separator">
+                        <div class="page-separator__text">Practicas</div>
+                    </div>
+                
+                    <div class="card mb-lg-32pt">
+                
+                        <div class="table-responsive"
+                             data-toggle="lists"
+                             data-lists-sort-by="js-lists-values-date"
+                             data-lists-sort-desc="true"
+                             data-lists-values='["js-lists-values-name", "js-lists-values-department", "js-lists-values-status", "js-lists-values-type", "js-lists-values-phone", "js-lists-values-date"]'>
+                
+                            <table class="table mb-0 thead-border-top-0 table-nowrap">
+                                <thead>
+                                    <tr>
+                                        
+                                        <th style="width: 48px;">
+                                            Practica
+                                        </th>
+                
+                                        <th style="width: 48px;">
+                                            Fecha de realización
+                                        </th>
+                
+                                        <th style="width: 48px;">
+                                            Nota
+                                        </th>
+                
+                                        <th style="width: 48px;">
+                                            Estado
+                                        </th>
+                
+                                        <th style="width: 24px;"></th>
+                                        <th style="width: 24px;"></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="list"
+                                       id="employees">
+                                  
+                                            <tr>
+                                               
+                
+                                                <td>
+                                                    <p class="mb-0"><strong class="js-lists-values-name">Nombre de practica</strong></p>
+                                                </td>
+                
+                                                <td>
+                                                    <small class="js-lists-values-type text-50">2020/12/10</small>
+                                                </td>
+                
+                                                <td>
+                                                    <small class="js-lists-values-phone text-50">60</small>
+                                                </td>
+                
+                                               
+                                                    <td>
+                                                        <div class="d-flex flex-column">
+                                                            <small class="js-lists-values-status text-50 mb-4pt">Reprobado</small>
+                                                            <span class="indicator-line rounded bg-accent"></span>
+                                                        </div>
+                                                    </td>
+                                            
+                
+                                                <td class="text-right">
+                                                    <a href="MisPracticas_Ver.html" type="button" class="btn btn-accent btn-rounded">
+                                                        Ver
+                                                    </a>
+                                                </td>
+                                              
+                                            </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+<br>
+
+
+
+                    <div class="page-separator">
+                        <div class="page-separator__text">Agendar Practica</div>
+                    </div>
+                
+                    <div class="card mb-lg-32pt">
+                
+                        <div class="table-responsive"
+                             data-toggle="lists"
+                             data-lists-sort-by="js-lists-values-date"
+                             data-lists-sort-desc="true"
+                             data-lists-values='["js-lists-values-name", "js-lists-values-department", "js-lists-values-status", "js-lists-values-type", "js-lists-values-phone", "js-lists-values-date"]'>
+                
+                            <table class="table mb-0 thead-border-top-0 table-nowrap">
+                                <thead>
+                                    <tr>
+                                        
+                                        <th style="width: 48px;">
+                                            Practica
+                                        </th>
+                
+                                        <th style="width: 48px;">
+                                            Fecha de realización
+                                        </th>
+                
+                                        <th style="width: 48px;">
+                                            Instructor
+                                        </th>
+                
+                                      
+                
+                                        <th style="width: 24px;"></th>
+                                        <th style="width: 24px;"></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="list"
+                                       id="employees">
+                                  
+                                            <tr>
+                                               
+                
+                                                <td>
+                                                    <p class="mb-0"><strong class="js-lists-values-name">Practica Mar</strong></p>
+                                                </td>
+                
+                                                <td>
+                                                    <input type="text" class="form-control" id="amount" value="2020/12/10"  size="2">
+                                                </td>
+                
+                                                <td>
+                                                    <small class="js-lists-values-phone text-50">Diego</small>
+                                                </td>
+                
+                                              
+                
+                                                <td class="text-right">
+                                                    <a href="" type="button" class="btn btn-accent btn-rounded">
+                                                        Solicitar
+                                                    </a>
+                                                </td>
+                                              
+                                            </tr>
+                                    
+                                </tbody>
+                                <tbody class="list"
+                                id="employees">
+                           
+                                     <tr>
+                                        
+         
+                                         <td>
+                                             <p class="mb-0"><strong class="js-lists-values-name">Practica Piscina</strong></p>
+                                         </td>
+         
+                                         <td>
+                                            <input type="text" class="form-control" id="amount" value="2020/12/10"  size="2">
+                                             
+                                         </td>
+         
+                                         <td>
+                                             <small class="js-lists-values-phone text-50">Diego</small>
+                                         </td>
+         
+                                        
+         
+                                         <td class="text-right">
+                                             <a href="" type="button" class="btn btn-accent btn-rounded">
+                                                 Solicitar
+                                             </a>
+                                         </td>
+                                       
+                                     </tr>
+                             
+                         </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- // END Page Content -->
+
+                <!-- Footer -->
+
+                <div class=" border-top-2 mt-auto">
+                    <div class="container page__container page-section d-flex flex-column">
+                        <p class="text-70 brand mb-24pt">
+                            <img class="brand-icon"
+                                 src="../../../public/images/logo/black-70@2x.png"
+                                 width="30"
+                                 alt="Luma"> DiveCR
+                        </p>
+                        <p class="measure-lead-max text-50 small mr-8pt">Luma is a beautifully crafted user interface for modern Education Platforms, including Courses & Tutorials, Video Lessons, Student and Teacher Dashboard, Curriculum Management, Earnings and Reporting, ERP, HR, CMS, Tasks, Projects, eCommerce and more.</p>
+                        <p class="mb-8pt d-flex">
+                            <a href=""
+                               class="text-70 text-underline mr-8pt small">Terms</a>
+                            <a href=""
+                               class="text-70 text-underline small">Privacy policy</a>
+                        </p>
+                        <p class="text-50 small mt-n1 mb-0">Copyright 2019 &copy; All rights reserved.</p>
+                    </div>
+                </div>
+
+                <!-- // END Footer -->
+
+            </div>
+
+            <!-- // END drawer-layout__content -->
+
+            <!-- Drawer -->
+
+            <div class="mdk-drawer js-mdk-drawer"
+            id="default-drawer">
+           <div class="mdk-drawer__content">
+               <div class="sidebar sidebar-black-dodger-blue sidebar-left"
+                    data-perfect-scrollbar>
+                        <!-- Sidebar Content -->
+
+                        <div class="d-flex align-items-center navbar-height">
+                            <form action="dashboard.html"
+                                  class="search-form search-form--black mx-16pt pr-0 pl-16pt">
+                                <input type="text"
+                                       class="form-control pl-0"
+                                       placeholder="Search">
+                                <button class="btn"
+                                        type="submit"><i class="material-icons">search</i></button>
+                            </form>
+                        </div>
+
+                        <a href="dashboard.html"
+                           class="sidebar-brand ">
+                            <!-- <img class="sidebar-brand-icon" src="../../public/images/illustration/student/128/white.svg" alt="Luma"> -->
+
+                            <span class="avatar avatar-xl sidebar-brand-icon h-auto">
+
+                                <span class="avatar-title rounded bg-primary"><img src="../../../public/images/illustration/student/128/white.svg"
+                                         class="img-fluid"
+                                         alt="logo" /></span>
+
+                            </span>
+
+                            <span>DiveCR</span>
+                        </a>
+
+                        <div class="sidebar-heading">ESTUDIANTE</div>
+                        <ul class="sidebar-menu">
+
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button js-sidebar-collapse"
+                                   
+                                   href="dashboard.html">
+                                   <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">account_box</span>
+                                    Dashboard
+                                    
+                                </a>
+                               
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button js-sidebar-collapse"
+                                
+                                   href="MisCursos.html">
+                                   <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">search</span>
+                                    Mis Cursos
+                                   
+                                </a>
+                                
+                            </li>
+
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button js-sidebar-collapse"
+                                  
+                                   href="MisExamenes.html">
+                                   <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">poll</span>
+                                    Mis Examenes
+                                   
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button js-sidebar-collapse"
+                                  
+                                   href="MisPracticas.html">
+                                   <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">poll</span>
+                                    Mis Practicas
+                                   
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button js-sidebar-collapse"
+                                  
+                                   href="MisReservas.html">
+                                   <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">code</span>
+                                    Mis Reservas
+                                   
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button js-sidebar-collapse"
+                                 data-toggle="collapse"
+                                 href="#student_menuu">
+                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">account_box</span>
+                                  Servicios
+                                  <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                               </a>
+                               <ul class="sidebar-submenu collapse sm-indent"
+                                id="student_menuu">
+
+                                 <li class="sidebar-menu-item">
+                                   <a class="sidebar-menu-button"
+                                     href="ecommerce_Tours.html">
+
+                                       <span class="sidebar-menu-text">Tours</span>
+                                    </a>
+                                 </li>
+                                 <li class="sidebar-menu-item">
+                                   <a class="sidebar-menu-button"
+                                     href="ecommerce_Cursos.html">
+
+                                      <span class="sidebar-menu-text">Cursos</span>
+                                   </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button"
+                                      href="ecommerce_Store.html">
+ 
+                                       <span class="sidebar-menu-text">Tienda en Línea</span>
+                                    </a>
+                                 </li>
+                           
+                             </ul>
+                         
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button js-sidebar-collapse"
+                               href="ecommerce _Carrito.html">
+                               <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">add_shopping_cart</span>
+                                Carro
+                               
+                            </a>
+                     </li>
+                   
+                         <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button js-sidebar-collapse"
+                               
+                               href="academia_InformacionGeneral.html">
+                               <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">code</span>
+                                Quienes Somos?
+                               
+                            </a>
+                        </li>
+
+                        </ul>
+
+                        
+
+                        <!-- // END Sidebar Content -->
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- // END Drawer -->
+
+        </div>
+
+        <!-- // END Drawer Layout -->
+
+         <!-- jQuery -->
+         <script src="../../../public/vendor/jquery.min.js"></script>
+
+         <!-- Bootstrap -->
+         <script src="../../../public/vendor/popper.min.js"></script>
+         <script src="../../../public/vendor/bootstrap.min.js"></script>
+ 
+         <!-- Perfect Scrollbar -->
+         <script src="../../../public/vendor/perfect-scrollbar.min.js"></script>
+ 
+         <!-- DOM Factory -->
+         <script src="../../../public/vendor/dom-factory.js"></script>
+ 
+         <!-- MDK -->
+         <script src="../../../public/vendor/material-design-kit.js"></script>
+ 
+         <!-- App JS -->
+         <script src="../../../public/js/app.js"></script>
+ 
+         <!-- Preloader -->
+         <script src="../../../public/js/preloader.js"></script>
+ 
+         <!-- Global Settings -->
+         <script src="../../../public/js/settings.js"></script>
+ 
+         <!-- Moment.js -->
+         <script src="../../../public/vendor/moment.min.js"></script>
+         <script src="../../../public/vendor/moment-range.js"></script>
+ 
+         <!-- Flatpickr -->
+         <script src="../../../public/vendor/flatpickr/flatpickr.min.js"></script>
+         <script src="../../../public/js/flatpickr.js"></script>
+ 
+         <!-- Chart.js -->
+         <script src="../../../public/vendor/Chart.min.js"></script>
+         <script src="../../public/js/chartjs.js"></script>
+         <script src="../../public/js/chartjs-rounded-bar.js"></script>
+ 
+         <!-- Chart.js Samples -->
+         <script src="../../../public/js/page.ecommerce.js"></script>
+ 
+         <!-- List.js -->
+         <script src="../../../public/vendor/list.min.js"></script>
+         <script src="../../../public/js/list.js"></script>
+ 
+         <!-- Tables -->
+         <script src="../../../public/js/toggle-check-all.js"></script>
+         <script src="../../../public/js/check-selected-row.js"></script>
+     
+
+    </body>
+
+</html>

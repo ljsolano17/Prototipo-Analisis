@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en"
+      dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Carro</title>
+
+        <!-- Prevent the demo from appearing in search engines -->
+        <meta name="robots"
+              content="noindex">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&display=swap"
+              rel="stylesheet">
+
+        <!-- Preloader -->
+        <link type="text/css"
+              href="../../public/vendor/spinkit.css"
+              rel="stylesheet">
+
+        <!-- Perfect Scrollbar -->
+        <link type="text/css"
+              href="../../public/vendor/perfect-scrollbar.css"
+              rel="stylesheet">
+
+        <!-- Material Design Icons -->
+        <link type="text/css"
+              href="../../public/css/material-icons.css"
+              rel="stylesheet">
+
+        <!-- Font Awesome Icons -->
+        <link type="text/css"
+              href="../../public/css/fontawesome.css"
+              rel="stylesheet">
+
+        <!-- Preloader -->
+        <link type="text/css"
+              href="../../public/css/preloader.css"
+              rel="stylesheet">
+
+        <!-- App CSS -->
+        <link type="text/css"
+              href="../../public/css/app.css"
+              rel="stylesheet">
+
+        <!-- Flatpickr -->
+        <link type="text/css"
+              href="../../public/css/flatpickr.css"
+              rel="stylesheet">
+        <link type="text/css"
+              href="../../public/css/flatpickr-airbnb.css"
+              rel="stylesheet">
+
+    </head>
+
+    <body class="layout-app ">
+
+        <div class="preloader">
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+            </div>
+
+            <!-- <div class="sk-bounce">
+    <div class="sk-bounce-dot"></div>
+    <div class="sk-bounce-dot"></div>
+  </div> -->
+
+            <!-- More spinner examples at https://github.com/tobiasahlin/SpinKit/blob/master/examples.html -->
+        </div>
+
+        <!-- Drawer Layout -->
+
+        <div class="mdk-drawer-layout js-mdk-drawer-layout"
+             data-push
+             data-responsive-width="992px">
+            <div class="mdk-drawer-layout__content page-content">
+
+                <!-- Header -->
+
+                <!-- Navbar -->
+
+                <div class="navbar navbar-expand pr-0 navbar-dark border-bottom-2"
+                 id="default-navbar"
+                 data-primary>
+
+                <!-- Navbar Toggler -->
+
+                <button class="navbar-toggler w-auto mr-16pt d-block d-lg-none rounded-0"
+                        type="button"
+                        data-toggle="sidebar">
+                    <span class="material-icons">short_text</span>
+                </button>
+
+                <!-- // END Navbar Toggler -->
+                <!-- Navbar Brand -->
+
+                <a href="index.html"
+                   class="navbar-brand mr-16pt d-lg-none">
+
+                    <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+
+                        <span class="avatar-title rounded bg-primary">
+                            <img src="~/Content/images/illustration/student/128/white.svg"
+                                 alt="logo"
+                                 class="img-fluid" />
+                        </span>
+
+                    </span>
+
+                    <span class="d-none d-lg-block">DiveCR</span>
+                </a>
+
+                <!-- // END Navbar Brand -->
+
+
+
+                <div class="flex"></div>
+
+                <!-- Navbar Menu -->
+
+                <div class="nav navbar-nav flex-nowrap d-flex mr-16pt">
+
+                    <!-- Notifications dropdown -->
+                    <div class="nav-item dropdown dropdown-notifications dropdown-xs-down-full"
+                         data-toggle="tooltip"
+                         data-title="Messages"
+                         data-placement="bottom"
+                         data-boundary="window">
+                        <button class="nav-link btn-flush dropdown-toggle"
+                                type="button"
+                                data-toggle="dropdown"
+                                data-caret="false">
+                            <i class="material-icons icon-24pt">mail_outline</i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div data-perfect-scrollbar
+                                 class="position-relative">
+                                <div class="dropdown-header"><strong>Messages</strong></div>
+                                <div class="list-group list-group-flush mb-0">
+
+                                    <a href="javascript:void(0);"
+                                       class="list-group-item list-group-item-action unread">
+                                        <span class="d-flex align-items-center mb-1">
+                                            <small class="text-black-50">5 minutes ago</small>
+
+                                            <span class="ml-auto unread-indicator bg-accent"></span>
+
+                                        </span>
+                                        <span class="d-flex">
+                                            <span class="avatar avatar-xs mr-2">
+                                                <img src="~/Content/images/people/110/woman-5.jpg"
+                                                     alt="people"
+                                                     class="avatar-img rounded-circle">
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+                                                <strong class="text-black-100">Michelle</strong>
+                                                <span class="text-black-70">Clients loved the new design.</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                    <a href="javascript:void(0);"
+                                       class="list-group-item list-group-item-action">
+                                        <span class="d-flex align-items-center mb-1">
+                                            <small class="text-black-50">5 minutes ago</small>
+
+                                        </span>
+                                        <span class="d-flex">
+                                            <span class="avatar avatar-xs mr-2">
+                                                <img src="~/Content/images/people/110/woman-5.jpg"
+                                                     alt="people"
+                                                     class="avatar-img rounded-circle">
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+                                                <strong class="text-black-100">Michelle</strong>
+                                                <span class="text-black-70">🔥 Superb job..</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // END Notifications dropdown -->
+                    <!-- Notifications dropdown -->
+                    <div class="nav-item ml-16pt dropdown dropdown-notifications dropdown-xs-down-full"
+                         data-toggle="tooltip"
+                         data-title="Notifications"
+                         data-placement="bottom"
+                         data-boundary="window">
+                        <button class="nav-link btn-flush dropdown-toggle"
+                                type="button"
+                                data-toggle="dropdown"
+                                data-caret="false">
+                            <i class="material-icons">notifications_none</i>
+                            <span class="badge badge-notifications badge-accent">2</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div data-perfect-scrollbar
+                                 class="position-relative">
+                                <div class="dropdown-header"><strong>System notifications</strong></div>
+                                <div class="list-group list-group-flush mb-0">
+
+                                    <a href="javascript:void(0);"
+                                       class="list-group-item list-group-item-action unread">
+                                        <span class="d-flex align-items-center mb-1">
+                                            <small class="text-black-50">3 minutes ago</small>
+
+                                            <span class="ml-auto unread-indicator bg-accent"></span>
+
+                                        </span>
+                                        <span class="d-flex">
+                                            <span class="avatar avatar-xs mr-2">
+                                                <span class="avatar-title rounded-circle bg-light">
+                                                    <i class="material-icons font-size-16pt text-accent">account_circle</i>
+                                                </span>
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+
+                                                <span class="text-black-70">Your profile information has not been synced correctly.</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                    <a href="javascript:void(0);"
+                                       class="list-group-item list-group-item-action">
+                                        <span class="d-flex align-items-center mb-1">
+                                            <small class="text-black-50">5 hours ago</small>
+
+                                        </span>
+                                        <span class="d-flex">
+                                            <span class="avatar avatar-xs mr-2">
+                                                <span class="avatar-title rounded-circle bg-light">
+                                                    <i class="material-icons font-size-16pt text-primary">group_add</i>
+                                                </span>
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+                                                <strong class="text-black-100">Adrian. D</strong>
+                                                <span class="text-black-70">Wants to join your private group.</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                    <a href="javascript:void(0);"
+                                       class="list-group-item list-group-item-action">
+                                        <span class="d-flex align-items-center mb-1">
+                                            <small class="text-black-50">1 day ago</small>
+
+                                        </span>
+                                        <span class="d-flex">
+                                            <span class="avatar avatar-xs mr-2">
+                                                <span class="avatar-title rounded-circle bg-light">
+                                                    <i class="material-icons font-size-16pt text-warning">storage</i>
+                                                </span>
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+
+                                                <span class="text-black-70">Your deploy was successful.</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // END Notifications dropdown -->
+
+                    <div class="nav-item dropdown">
+                        <a href="#"
+                           class="nav-link d-flex align-items-center dropdown-toggle"
+                           data-toggle="dropdown"
+                           data-caret="false">
+
+                            <span class="avatar avatar-sm mr-8pt2">
+
+                                <span class="avatar-title rounded-circle bg-primary"><i class="material-icons">account_box</i></span>
+
+                            </span>
+
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-header"><strong>Account</strong></div>
+
+
+                            <a class="dropdown-item"
+                            href="edit-account-profile.html">Edit Account</a>
+                          
+                            <a class="dropdown-item"
+                               href="login.html">Logout</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- // END Navbar Menu -->
+
+            </div>
+
+                <!-- // END Navbar -->
+
+                <!-- // END Header -->
+
+                <div class="pt-32pt">
+                    <div class="container page__container d-flex flex-column flex-md-row align-items-center text-center text-sm-left">
+                        <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
+
+                            <div class="mb-24pt mb-sm-0 mr-sm-24pt">
+                                <h2 class="mb-0">Carro</h2>
+
+                                <ol class="breadcrumb p-0 m-0">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+
+                                    <li class="breadcrumb-item active">
+
+                                        Carro
+
+                                    </li>
+
+                                </ol>
+
+                            </div>
+                        </div>
+
+                      
+
+                    </div>
+                </div>
+
+                <!-- BEFORE Page Content -->
+
+                <!-- // END BEFORE Page Content -->
+
+                <!-- Page Content -->
+
+                <div class="container page__container">
+                    <div class="page-section">
+
+                      
+
+                        <div class="card mb-0">
+                            
+                            <div class="table-responsive"
+                                 data-toggle="lists"
+                                 data-lists-sort-by="js-lists-values-orders-name"
+                                 data-lists-values='["js-lists-values-orders-name", "js-lists-values-orders-date", "js-lists-values-orders-amount"]'>
+                                <table class="table mb-0 table-nowrap thead-border-top-0">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 18px;">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox"
+                                                           class="custom-control-input js-toggle-check-all"
+                                                           data-target="#orders"
+                                                           id="customCheckAll">
+                                                    <label class="custom-control-label"
+                                                           for="customCheckAll"><span class="text-hide">Toggle all</span></label>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <a href="javascript:void(0)"
+                                                   class="sort"
+                                                   data-sort="js-lists-values-orders-name">Producto</a>
+                                            </th>
+                                            <th style="width: 150px;">
+                                                <a href="javascript:void(0)"
+                                                   class="sort"
+                                                   data-sort="js-lists-values-orders-date">Agregado al carrito</a>
+                                            </th>
+                                            <th style="width: 100px;">
+                                                <a href="javascript:void(0)"
+                                                   class="sort"
+                                                   data-sort="js-lists-values-orders-amount">Precio</a>
+                                            </th>
+                                            <th style="width: 100px;">
+                                                <a href="javascript:void(0)"
+                                                   class="sort"
+                                                   data-sort="js-lists-values-orders-amount">Cantidad</a>
+                                            </th>
+                                            <th style="width: 100px;">
+                                                <a href="javascript:void(0)"
+                                                   class="sort"
+                                                   data-sort="js-lists-values-orders-amount">Acciones</a>
+                                            </th>
+                                            <th style="width: 24px;"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="list"
+                                           id="orders">
+
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox"
+                                                           class="custom-control-input js-check-selected-row"
+                                                           id="customCheck1_1">
+                                                    <label class="custom-control-label"
+                                                           for="customCheck1_1"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="material-icons text-20 mr-8pt">contacts</i>
+                                                    <a class="js-lists-values-orders-name"
+                                                       href="">Aletas 4</a>
+                                                </div>
+                                            </td>
+                                            <td class="js-lists-values-orders-date text-50">4 days ago</td>
+                                            <td>
+                                                <a class="js-lists-values-orders-amount"
+                                                   href="">&dollar;246</a>
+                                            </td>
+                                            <td>
+                                                <a class="js-lists-values-orders-amount"
+                                                   href="">10</a>
+                                            </td>
+                                            <td class="text-right">
+                                                <a href=""
+                                                   class="text-50"><i class="material-icons">delete</i></a>
+                                            </td>
+                                           
+                                        </tr>
+                                        
+                                      
+
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox"
+                                                           class="custom-control-input js-check-selected-row"
+                                                           id="customCheck1_2">
+                                                    <label class="custom-control-label"
+                                                           for="customCheck1_2"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="material-icons text-20 mr-8pt">contacts</i>
+                                                    <a class="js-lists-values-orders-name"
+                                                       href="">Aletas 3</a>
+                                                </div>
+                                            </td>
+                                            <td class="js-lists-values-orders-date text-50">3 days ago</td>
+                                            <td>
+                                                <a class="js-lists-values-orders-amount"
+                                                   href="">&dollar;369</a>
+                                            </td>
+                                            <td>
+                                                <a class="js-lists-values-orders-amount"
+                                                   href="">10</a>
+                                            </td>
+                                            <td class="text-right">
+                                                <a href=""
+                                                   class="text-50"><i class="material-icons">delete</i></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox"
+                                                           class="custom-control-input js-check-selected-row"
+                                                           id="customCheck1_3">
+                                                    <label class="custom-control-label"
+                                                           for="customCheck1_3"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="material-icons text-20 mr-8pt">contacts</i>
+                                                    <a class="js-lists-values-orders-name"
+                                                       href="">Aletas 2</a>
+                                                </div>
+                                            </td>
+                                            <td class="js-lists-values-orders-date text-50">2 days ago</td>
+                                            <td>
+                                                <a class="js-lists-values-orders-amount"
+                                                   href="">&dollar;492</a>
+                                            </td>
+                                            <td>
+                                                <a class="js-lists-values-orders-amount"
+                                                   href="">10</a>
+                                            </td>
+                                            <td class="text-right">
+                                                <a href=""
+                                                   class="text-50"><i class="material-icons">delete</i></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="selected">
+                                            <td>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox"
+                                                           class="custom-control-input js-check-selected-row"
+                                                           checked=""
+                                                           id="customCheck1_4">
+                                                    <label class="custom-control-label"
+                                                           for="customCheck1_4"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="material-icons text-20 mr-8pt">contacts</i>
+                                                    <a class="js-lists-values-orders-name"
+                                                       href="">Aletas 1</a>
+                                                </div>
+                                            </td>
+                                            <td class="js-lists-values-orders-date text-50">1 day ago</td>
+                                            <td>
+                                                <a class="js-lists-values-orders-amount"
+                                                   href="">&dollar;615</a>
+                                            </td>
+                                            <td>
+                                                <a class="js-lists-values-orders-amount"
+                                                   href="">10</a>
+                                            </td>
+                                            <td class="text-right">
+                                                <a href=""
+                                                   class="text-50"><i class="material-icons">delete</i></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="selected">
+                                            <td>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox"
+                                                           class="custom-control-input js-check-selected-row"
+                                                           checked=""
+                                                           id="customCheck1_5">
+                                                    <label class="custom-control-label"
+                                                           for="customCheck1_5"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="material-icons text-20 mr-8pt">contacts</i>
+                                                    <a class="js-lists-values-orders-name"
+                                                       href="">Aletas 5</a>
+                                                </div>
+                                            </td>
+                                            <td class="js-lists-values-orders-date text-50">4 hours ago</td>
+                                            <td>
+                                                <a class="js-lists-values-orders-amount"
+                                                   href="">&dollar;738</a>
+                                            </td>
+                                            <td>
+                                                <a class="js-lists-values-orders-amount"
+                                                   href="">10</a>
+                                            </td>
+                                            <td class="text-right">
+                                                <a href=""
+                                                   class="text-50"><i class="material-icons">delete</i></a>
+                                            </td>
+                                        </tr>
+
+                                </table>
+                                <br><br><br>
+                                <table class="table mb-0 table-nowrap thead-border-top-0">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 18px;">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox"
+                                                           class="custom-control-input js-toggle-check-all"
+                                                           data-target="#orders"
+                                                           id="customCheckAll">
+                                                    <label class="custom-control-label"
+                                                           for="customCheckAll"><span class="text-hide">Toggle all</span></label>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <a href="javascript:void(0)"
+                                                   class="sort"
+                                                   data-sort="js-lists-values-orders-name">Curso/Tour</a>
+                                            </th>
+                                            <th style="width: 150px;">
+                                                <a href="javascript:void(0)"
+                                                   class="sort"
+                                                   data-sort="js-lists-values-orders-date">Agregado al carrito</a>
+                                            </th>
+                                            <th style="width: 100px;">
+                                                <a href="javascript:void(0)"
+                                                   class="sort"
+                                                   data-sort="js-lists-values-orders-amount">Precio</a>
+                                            </th>
+                                            <th style="width: 100px;">
+                                                <a href="javascript:void(0)"
+                                                   class="sort"
+                                                   data-sort="js-lists-values-orders-amount">Fechas Disponibles</a>
+                                            </th>
+                                            <th style="width: 100px;">
+                                                <a href="javascript:void(0)"
+                                                   class="sort"
+                                                   data-sort="js-lists-values-orders-amount">Acciones</a>
+                                            </th>
+                                            <th style="width: 24px;"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="list"
+                                           id="orders">
+
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox"
+                                                           class="custom-control-input js-check-selected-row"
+                                                           id="customCheck1_1">
+                                                    <label class="custom-control-label"
+                                                           for="customCheck1_1"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="material-icons text-20 mr-8pt">contacts</i>
+                                                    <a class="js-lists-values-orders-name"
+                                                       href="">Tour 1 - Curso 1</a>
+                                                </div>
+                                            </td>
+                                            <td class="js-lists-values-orders-date text-50">4 days ago</td>
+                                            <td>
+                                                <a class="js-lists-values-orders-amount"
+                                                   href="">&dollar;246</a>
+                                            </td>
+                                            <td class="text-right">
+                         <div class="accordion js-accordion accordion--boxed list-group-flush"
+                            id="parent">  <div class="accordion__item">
+                                <a href="#"
+                                   class="accordion__toggle collapsed"
+                                   data-toggle="collapse"
+                                   data-target="#course-toc-1"
+                                   data-parent="#parent">
+                                    <span class="flex">Fechas</span>
+                                    <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+                                </a>
+                                <div class="accordion__menu collapse"
+                                     id="course-toc-1">
+                                    <div class="accordion__menu-link">
+                                        
+                                            <i class="material-icons icon-16pt">calendar_today</i>
+                                        
+                                        <a class="flex"
+                                           href="">Fecha 1</a>
+                                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <i class="material-icons icon-16pt">calendar_today</i>
+                                        
+                                           <a class="flex"
+                                           href="">Fecha 2</a>
+                                       
+                                    </div>
+                                </div>
+                            </div></div>
+                                            </td>
+                                            <td class="text-right">
+                                                <a href=""
+                                                   class="text-50"><i class="material-icons">delete</i></a>
+                                            </td>
+                                           
+                                        </tr>
+                                        
+                                      
+
+                                        
+
+                                </table>
+                                
+                            </div>
+                            <div class="card-footer">
+
+                                <div id="totalSalesChartLegend"
+                                class="chart-legend chart-legend--horizontal mt-16pt"><a href="fygaro_prototipo.html">
+                                    <input  class="btn btn-primary" type="button" value="Continuar con el pago" />
+                                 </a>
+                                 
+                           </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- // END Page Content -->
+
+                <!-- Footer -->
+
+                <div class="bg-white border-top-2 mt-auto">
+                    <div class="container page__container page-section d-flex flex-column">
+                        <p class="text-70 brand mb-24pt">
+                            <img class="brand-icon"
+                                 src="../../public/images/logo/black-70@2x.png"
+                                 width="30"
+                                 alt="Luma"> DiveCR
+                        </p>
+                        <p class="measure-lead-max text-50 small mr-8pt">Luma is a beautifully crafted user interface for modern Education Platforms, including Courses & Tutorials, Video Lessons, Student and Teacher Dashboard, Curriculum Management, Earnings and Reporting, ERP, HR, CMS, Tasks, Projects, eCommerce and more.</p>
+                        <p class="mb-8pt d-flex">
+                            <a href=""
+                               class="text-70 text-underline mr-8pt small">Terms</a>
+                            <a href=""
+                               class="text-70 text-underline small">Privacy policy</a>
+                        </p>
+                        <p class="text-50 small mt-n1 mb-0">Copyright 2019 &copy; All rights reserved.</p>
+                    </div>
+                </div>
+
+                <!-- // END Footer -->
+
+            </div>
+
+            <!-- // END drawer-layout__content -->
+
+            <!-- Drawer -->
+
+            <div class="mdk-drawer js-mdk-drawer"
+                 id="default-drawer">
+                <div class="mdk-drawer__content">
+                    <div class="sidebar sidebar-dark-pickled-bluewood sidebar-left"
+                         data-perfect-scrollbar>
+
+                        <!-- Sidebar Content -->
+
+                        <div class="d-flex align-items-center navbar-height">
+                            <form action="index.html"
+                                  class="search-form search-form--black mx-16pt pr-0 pl-16pt">
+                                <input type="text"
+                                       class="form-control pl-0"
+                                       placeholder="Search">
+                                <button class="btn"
+                                        type="submit"><i class="material-icons">search</i></button>
+                            </form>
+                        </div>
+
+                        <a href="index.html"
+                           class="sidebar-brand ">
+                            <!-- <img class="sidebar-brand-icon" src="../../public/images/illustration/student/128/white.svg" alt="Luma"> -->
+
+                            <span class="avatar avatar-xl sidebar-brand-icon h-auto">
+
+                                <span class="avatar-title rounded bg-primary"><img src="../../public/images/illustration/student/128/white.svg"
+                                         class="img-fluid"
+                                         alt="logo" /></span>
+
+                            </span>
+
+                            <span>DiveCR</span>
+                        </a>
+
+                        <div class="sidebar-heading">Usuario</div>
+                        <ul class="sidebar-menu">
+
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button js-sidebar-collapse"
+                                   data-toggle="collapse"
+                                   href="#student_menu">
+                                   <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">account_box</span>
+                                    Dashboard
+                                   
+                                </a>
+                                
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button js-sidebar-collapse"
+                                   data-toggle="collapse"
+                                   href="#instructor_menu">
+                                   <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">search</span>
+                                    Mis Cursos
+                                   
+                                </a>
+                                
+                            </li>
+
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button js-sidebar-collapse"
+                                   data-toggle="collapse"
+                                   href="#instructor_menu">
+                                   <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">poll</span>
+                                    Mis Examenes
+                                   
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button js-sidebar-collapse"
+                                 data-toggle="collapse"
+                                 href="#student_menuu">
+                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">account_box</span>
+                                  Servicios
+                                  <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                               </a>
+                               <ul class="sidebar-submenu collapse sm-indent"
+                                id="student_menuu">
+
+                                 <li class="sidebar-menu-item">
+                                   <a class="sidebar-menu-button"
+                                     href="index.html">
+
+                                       <span class="sidebar-menu-text">Tours</span>
+                                    </a>
+                                 </li>
+                                 <li class="sidebar-menu-item">
+                                   <a class="sidebar-menu-button"
+                                     href="courses.html">
+
+                                      <span class="sidebar-menu-text">Cursos</span>
+                                   </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button"
+                                      href="courses.html">
+ 
+                                       <span class="sidebar-menu-text">Tienda en Línea</span>
+                                    </a>
+                                 </li>
+                           
+                             </ul>
+                         
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button js-sidebar-collapse"
+                               data-toggle="collapse"
+                               href="#instructor_menu">
+                               <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">add_shopping_cart</span>
+                                Carro
+                               
+                            </a>
+                        </li>
+                            <li class="sidebar-menu-item">
+                                <a class="sidebar-menu-button js-sidebar-collapse"
+                                   data-toggle="collapse"
+                                   href="#student_menu">
+                                   <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">account_box</span>
+                                    Mantenimiento
+                                    <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                </a>
+                            <ul class="sidebar-submenu collapse sm-indent"
+                                id="student_menu">
+
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button"
+                                       href="index.html">
+
+                                        <span class="sidebar-menu-text">Usuarios</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button"
+                                       href="courses.html">
+
+                                        <span class="sidebar-menu-text">Tienda</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button"
+                                       href="index.html">
+
+                                        <span class="sidebar-menu-text">Tours</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button"
+                                       href="index.html">
+
+                                        <span class="sidebar-menu-text">Cursos</span>
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                         </li>
+                         <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button js-sidebar-collapse"
+                               data-toggle="collapse"
+                               href="#instructor_menu">
+                               <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">code</span>
+                                Quienes Somos?
+                               
+                            </a>
+                        </li>
+
+                           
+
+                      </ul>
+
+                        <!-- // END Sidebar Content -->
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- // END Drawer -->
+
+        </div>
+
+        <!-- // END Drawer Layout -->
+
+        <!-- jQuery -->
+        <script src="../../public/vendor/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="../../public/vendor/popper.min.js"></script>
+        <script src="../../public/vendor/bootstrap.min.js"></script>
+
+        <!-- Perfect Scrollbar -->
+        <script src="../../public/vendor/perfect-scrollbar.min.js"></script>
+
+        <!-- DOM Factory -->
+        <script src="../../public/vendor/dom-factory.js"></script>
+
+        <!-- MDK -->
+        <script src="../../public/vendor/material-design-kit.js"></script>
+
+        <!-- App JS -->
+        <script src="../../public/js/app.js"></script>
+
+        <!-- Preloader -->
+        <script src="../../public/js/preloader.js"></script>
+
+        <!-- Global Settings -->
+        <script src="../../public/js/settings.js"></script>
+
+        <!-- Moment.js -->
+        <script src="../../public/vendor/moment.min.js"></script>
+        <script src="../../public/vendor/moment-range.js"></script>
+
+        <!-- Flatpickr -->
+        <script src="../../public/vendor/flatpickr/flatpickr.min.js"></script>
+        <script src="../../public/js/flatpickr.js"></script>
+
+        <!-- Chart.js -->
+        <script src="../../public/vendor/Chart.min.js"></script>
+        <script src="../../public/js/chartjs.js"></script>
+        <script src="../../public/js/chartjs-rounded-bar.js"></script>
+
+        <!-- Chart.js Samples -->
+        <script src="../../public/js/page.ecommerce.js"></script>
+
+        <!-- List.js -->
+        <script src="../../public/vendor/list.min.js"></script>
+        <script src="../../public/js/list.js"></script>
+
+        <!-- Tables -->
+        <script src="../../public/js/toggle-check-all.js"></script>
+        <script src="../../public/js/check-selected-row.js"></script>
+
+    </body>
+
+</html>
